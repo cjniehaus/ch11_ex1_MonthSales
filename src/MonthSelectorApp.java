@@ -30,7 +30,7 @@ public class MonthSelectorApp {
                 continue;                
             }
             
-            System.out.println("Sales for " + monthName[monthNumber-1] + ": " + monthSales[monthNumber-1]);
+            System.out.println("Sales for " + monthName[monthNumber-1] + ": " + currency.format(monthSales[monthNumber-1]));
             
             // get the index number for the month
             // and display the month name and sales            
@@ -46,7 +46,7 @@ public class MonthSelectorApp {
         	total = total + monthSales[i];
         }
        
-        System.out.println("Total sales: " + total);
+        System.out.println("Total sales: " + currency.format(total));
         
         // display the total sales for the year
         
